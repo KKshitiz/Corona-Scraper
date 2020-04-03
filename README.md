@@ -3,6 +3,7 @@ Corona-Scraper is a live monitoring tool useful for vigilants and medical staffs
 <br>
 <br>
 ![Coronovirus](./coronavirus.jpg)
+
 ## Features
 - #### Displays real-time information related to the COVID-19 country wise:
   - Country affected
@@ -15,20 +16,43 @@ Corona-Scraper is a live monitoring tool useful for vigilants and medical staffs
   - Serious/critical cases
   - Total cases per 1 million population
   - Total deaths per 1 million population
+  <br>
+
 - #### Fetches data on startup:
-  - The application fetches updated data from server on startup so that updated data is showed to the user every time the application is launched<br>
+  - The application fetches updated data from server on startup so that updated data is showed to the user every time the application is launched
+  <br>
+  <br>
   _NOTE:This feature will only work if the system is connected to internet at application launch_
+  <br>
+  <br>
 - #### Displays the connection status:
   - Displays the connection status in the status bar whether the sytem is connected to the internet or not
+  <br>
+  <br>
 - #### Displays the last update time:
   - The status bar displays the last time the data was fetched from the server so that users can keep track of the numbers
+  <br>
+  <br>
 - #### Works in offline mode:
   - Able to store the data when online and retrieve it if the system is offline
+  <br>
+  <br>
 - #### Supports two types of desktop modes:
   - _Application mode_ <br>
     In the application mode, the user can minimize, restore or move the app across the desktop. The application mode comes with the title bar
+  <br>
+  <br>
   - _Widget mode_ <br>
     In the widget mode, the app will stay at a place on desktop without any docking options and will remain afloat above all other applications. To move the app, user needs to switch to application mode. There is no title bar in the widget mode
+
+- #### Supports two themes:
+  - Light theme
+  - Dark theme
+
+
+## How the project idea evolved:
+_During the lockdown period, I was looking for some python projects, specifically in the web scraping domain. All the projects that I came through on the web were mostly related to scraping tweets from twitter or some random html from dummy websites or stuff more or less similar to the formers. Then the idea of scraping websites for data of COVID-19 effected countries crossed my mind. Although websites did great at serving the information to people on the web, a desktop application would go a step further by providing information at your desktop. Moreover, it would be helpful if it could work offline._
+
 
 ## Resources
 - [Learn about the basics of status codes returned by websites]("https://kinsta.com/blog/http-status-codes/")
