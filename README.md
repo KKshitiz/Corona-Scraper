@@ -1,12 +1,34 @@
 # Corona-Scraper
-Corona-Scraper is a live monitoring tool useful for vigilants and medical staffs.
-
+Corona-Scraper is a live monitoring tool useful for vigilants and medical staffs which is capable of tracking the COVID-19 global pandemic.
+<br>
+<br>
+![Coronovirus](./coronavirus.jpg)
 ## Features
-- Supports two types of desktop modes:
-  - __Application mode__ <br>
-    In the application mode, the user can minimize, restore or move the app across the desktop
-  - __Widget mode__ <br>
-    In the widget mode, the app will stay at a place on desktop without any docking options and will remain afloat above all other applications. To move the app, user needs to switch to application mode
+- #### Displays real-time information related to the COVID-19 country wise:
+  - Country affected
+  - Total number of cases
+  - New cases
+  - Total deaths
+  - New deaths
+  - Total recovered
+  - Active cases
+  - Serious/critical cases
+  - Total cases per 1 million population
+  - Total deaths per 1 million population
+- #### Fetches data on startup:
+  - The application fetches updated data from server on startup so that updated data is showed to the user every time the application is launched<br>
+  _NOTE:This feature will only work if the system is connected to internet at application launch_
+- #### Displays the connection status:
+  - Displays the connection status in the status bar whether the sytem is connected to the internet or not
+- #### Displays the last update time:
+  - The status bar displays the last time the data was fetched from the server so that users can keep track of the numbers
+- #### Works in offline mode:
+  - Able to store the data when online and retrieve it if the system is offline
+- #### Supports two types of desktop modes:
+  - _Application mode_ <br>
+    In the application mode, the user can minimize, restore or move the app across the desktop. The application mode comes with the title bar
+  - _Widget mode_ <br>
+    In the widget mode, the app will stay at a place on desktop without any docking options and will remain afloat above all other applications. To move the app, user needs to switch to application mode. There is no title bar in the widget mode
 
 ## Resources
 - [Learn about the basics of status codes returned by websites]("https://kinsta.com/blog/http-status-codes/")
@@ -15,6 +37,33 @@ Corona-Scraper is a live monitoring tool useful for vigilants and medical staffs
 - [Working with CSV files]("https://www.programiz.com/python-programming/csv")
 - [Reading from CSV files in detail]("https://www.programiz.com/python-programming/reading-csv-files")
 - [Writing to CSV files in detail]("https://www.programiz.com/python-programming/writing-csv-files")
+- [Complete Tkinter tutorial for beginners]("https://www.youtube.com/watch?v=YXPyB4XeYLA")
+
+## Technologies used:
+  - python3
+  - beautifulsoup4
+  - tkinter library
+  - requests library
+
+## How to install requirements:
+  - pip install tkinter
+  - pip install beautifulsoup4
+  - pip install requests
+    
+## Create your own executable
+    '''
+    pip install pyinstaller
+    cd script_folder
+    pyinstaller script.py                       //for executable with dependencies
+    pyinstaller --onefile script.py             //standalone executable file with terminal
+    pyinstaller --onefile -w script.py          //standalone executable without terminal
+    '''
+    
+**The executable will be located in the script_folder/dist directory**
+<br>
+_To create a setup use NSIS open source software_
+<br>
+_To compress the exe significantly use strip.exe then UPX_
 
 ## Disclaimer
 - All the data are fetched from third-party websites and I am in no way responsible for the correctness of it
