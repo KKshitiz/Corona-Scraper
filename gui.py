@@ -60,21 +60,28 @@ def widgetMode():
 
 #function to load data in the starting
 def loadData():
-    rows=readFromCsv(path)
     global country_header,country_list
-    country_header = rows[0]
-    country_list = rows[1:]
+    try:
+        rows=readFromCsv(path)
+        country_header = rows[0]
+        country_list = rows[1:]
+    except:
+        rows=[["NA"]*6]
+        country_header = rows[0]
+        country_list = rows[1:]
 
 
 
 #function to refresh the data
 def refreshData():
-
-    connect()
-    rows=scrape()
-    writeToCsv(rows,path)
-    loadData()
-    print("successfully updated")
+    try:
+        connect()
+        rows=scrape()
+        writeToCsv(rows,path)
+        loadData()
+        print("successfully updated")
+    except:
+        pass
 
 
 
