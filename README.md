@@ -17,6 +17,7 @@ Corona-Scraper is a live monitoring tool useful for vigilants and medical staffs
   - Total cases per 1 million population
   - Total deaths per 1 million population
   <br>
+  <br>
 
 - #### Fetches data on startup:
   - The application fetches updated data from server on startup so that updated data is showed to the user every time the application is launched
@@ -44,7 +45,9 @@ Corona-Scraper is a live monitoring tool useful for vigilants and medical staffs
   <br>
   - _Widget mode_ <br>
     In the widget mode, the app will stay at a place on desktop without any docking options and will remain afloat above all other applications. To move the app, user needs to switch to application mode. There is no title bar in the widget mode
-
+  <br>
+  <br>
+  
 - #### Supports two themes:
   - Light theme
   - Dark theme
